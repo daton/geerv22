@@ -14,22 +14,23 @@ import { BreadcrumpsComponent } from './shared/breadcrumps/breadcrumps.component
 import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
+//Rutas
+import { AppRoutes } from './app.routes';
+import { PagesModule } from './pages/pages.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PagenotfoundComponent,
-    DashboardComponent,
-    Graficas1Component,
-    PerfilComponent,
-    HeaderComponent,
 
-    NavbarComponent,
-    BreadcrumpsComponent,
-    SidebarComponent
+
+ 
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule,BrowserAnimationsModule, AppRoutes,PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
